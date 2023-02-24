@@ -13,22 +13,56 @@
 <body>
     <audio id="sound"></audio>
      <div class="container">
-        <div id="container">
-        <div class="search-box">
-            <input type="text" id="inp-word" placeholder="Type here"/>
-            <button id="search-btn" class="fa fa-search icon"></button>
+        <div class="inner-container">
+            <div id="container" class="box">
+                <div class="title">
+                    Search for new word
+                </div>
+                <div class="search-box">
+                    <input type="text" id="inp-word" placeholder="Type here"/>
+                    <button id="search-btn" class="fa fa-search icon"></button>
+                </div>
+                
+            </div>
+            
+            <div class="result box" id="result"> </div>
+            
+            <!-- <div>
+                <h3>History</h3> <br>
+                <p id="history-list"></p>
+                <button id="clear-history-button">Clear History</button>
+            </div> -->
+
+            <button id="view-history">
+                View History
+            </button>
         </div>
-        <div class="result" id="result"> </div> <br>
-    
-        <h3>History</h3> <br>
-    <p id="history-list"></p>
-    <button id="clear-history-button">Clear History</button>
-     </div>
     
     </div>
-    <div class="devloper">
-        Developed by Rakesh Kumar Sharma
-     </div>
+
+    <div class="history-popup" id="history-popup">
+
+        <button class="close-button" id="popup-close-btn">
+            <i class="fa fa-close"></i>
+        </button>
+        <div class="popup-box inner-container box">
+            <div class="title">
+                Your search history
+            </div>
+
+            <div id="history-results">
+                
+            </div>
+            <button class="clear-history-btn" id="clear-history-btn">
+                Clear History
+            </button>
+        </div>
+    </div>
+    <footer>
+        <span>
+            Developed by Rakesh Kumar Sharma
+        </span>
+    </footer>
     
      <script src="script.js"></script>
 </body>
